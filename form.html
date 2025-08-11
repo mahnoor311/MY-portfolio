@@ -48,10 +48,9 @@
     <div class="flex flex-col md:flex-row items-center md:items-start gap-8 sm:gap-12">
       
       <!-- Form -->
-      <form action="https://api.web3forms.com/submit" method="POST" 
-        class="bg-gray-800 rounded-lg p-6 sm:p-12 shadow-lg w-full md:w-1/2
-               transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
-        <input type="hidden" name="access_key" value="b101afd1-ac32-473a-bd98-84c9641be595" />
+ <form onsubmit="showMessage(event)" 
+  class="bg-gray-800 rounded-lg p-6 sm:p-12 shadow-lg w-full md:w-1/2
+         transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-2xl">
 
         <div class="mb-6">
           <label for="name" class="block mb-2 font-semibold text-gray-300">Your Name <span class="text-yellow-400">*</span></label>
@@ -122,4 +121,5 @@
 
 </body>
 </html>
+
 
