@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
@@ -11,32 +12,36 @@
       font-family: 'Poppins', sans-serif;
     }
     /* Fade in and float up animation */
-    @keyframes fadeInUp {
-      0% {
-        opacity: 0;
-        transform: translateY(20px);
-      }
-      100% {
-        opacity: 1;
-        transform: translateY(0);
-      }
-    }
-    .fade-in-up {
-      animation: fadeInUp 1.2s ease forwards;
-      will-change: transform, opacity;
-    }
-    /* Hover effect: scale and shadow */
-    .hover-scale-shadow:hover {
-      transform: scale(1.05);
-      box-shadow: 0 10px 20px rgba(255, 182, 193, 0.6); /* pink-ish shadow */
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
+@keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in-up {
+  animation: fadeInUp 1.2s ease forwards;
+  will-change: transform, opacity;
+}
+
+/* Hover effect: scale and shadow */
+.hover-scale-shadow:hover {
+  transform: scale(1.05);
+  box-shadow: 0 10px 20px rgba(255, 182, 193, 0.6); /* pink-ish shadow */
+ 
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
   </style>
 </head>
 
 <body class="bg-gray-900 text-white min-h-screen flex flex-col">
 
-  <!-- NAVBAR -->
+<!-- NAVBAR -->
   <nav class="bg-gradient-to-r from-purple-700 via-pink-600 to-yellow-500 px-4 sm:px-8 py-4 shadow-lg">
     <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between">
       <h1 class="text-xl sm:text-2xl font-extrabold tracking-wide mb-2 sm:mb-0">Mahnoor's Portfolio</h1>
@@ -48,74 +53,91 @@
     </div>
   </nav>
 
-  <!-- MAIN CONTENT -->
-  <main class="flex-grow max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+
+  <!-- Page content wrapper -->
+ <main class="flex-grow max-w-7xl mx-auto px-6 py-12">
+
+  <section class="mb-16 text-center">
+    <h3 class="text-3xl font-bold text-pink-400 mb-6">Shopping APP</h3>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 max-w-5xl mx-auto">
+      <img src="./p11.png" alt="Shopping 1" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
+      <img src="./p22.png" alt="Shopping project 2" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
+      <img src="./p55.png" alt="Shopping project 3" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
+         <img src="./p33.png" alt="Shopping project 3" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
+      
+    </div>
+    <a href="https://mahnoor311.github.io/E-Comerce-services-landing-/" target="_blank" 
+       class="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-yellow-400 text-gray-900 font-semibold rounded-full shadow hover:scale-105 hover:shadow-lg transition-transform duration-300 mx-auto">
+      🔗 View Project
+    </a>
+  </section>
 
 
 
-      <!-- Shopping Website Section -->
-    <section class="mb-16 text-center">
-      <h3 class="text-3xl font-bold text-pink-400 mb-6">Shopping-Clone</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto mb-6">
-        <img src="./p11.png" alt="Shopping Website 1" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
-        <img src="./p22.png" alt="Shopping Website 2" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
-      </div>
-      <a href="https://mahnoor311.github.io/E-Comerce-services-landing-/" target="_blank"
-         class="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-yellow-400 text-gray-900 font-semibold rounded-full shadow hover:scale-105 hover:shadow-lg transition-transform duration-300 mx-auto">
-        🔗 View Project
-      </a>
-    </section>
+  <section class="mb-16 text-center">
+  <h3 class="text-3xl font-bold text-pink-400 mb-6">The Netflix Clone</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-6 max-w-5xl mx-auto">
+  <img src="./net1.jpeg" alt="Netflix project 1" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
+  <img src="./net2.jpeg" alt="Netflix project 2" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
+  <img src="./net3.jpeg" alt="Netflix project 3" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
+</div>
 
-    <!-- Netflix Clone Section -->
-    <section class="mb-16 text-center">
-      <h3 class="text-3xl font-bold text-pink-400 mb-6">The Netflix Clone</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-5xl mx-auto mb-6">
-        <img src="./net1.jpeg" alt="Netflix 1" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
-        <img src="./net2.jpeg" alt="Netflix 2" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
-        <img src="./net3.jpeg" alt="Netflix 3" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
-      </div>
-      <a href="https://mahnoor311.github.io/E-Comerce-services-landing-/" target="_blank"
-         class="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-yellow-400 text-gray-900 font-semibold rounded-full shadow hover:scale-105 hover:shadow-lg transition-transform duration-300 mx-auto">
-        🔗 View Project
-      </a>
-    </section>
+  <a href="https://mahnoor311.github.io/E-Comerce-services-landing-/" target="_blank" 
+     class="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-yellow-400 text-gray-900 font-semibold rounded-full shadow hover:scale-105 hover:shadow-lg transition-transform duration-300 mx-auto">
+    🔗 View Project
+  </a>
+</section>
 
-    <!-- Shopping Website Section -->
-    <section class="mb-16 text-center">
-      <h3 class="text-3xl font-bold text-pink-400 mb-6">Shopping Website</h3>
-      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 max-w-5xl mx-auto mb-6">
-        <img src="./S1.png" alt="Shopping Website 1" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
-        <img src="./S2.png" alt="Shopping Website 2" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
-      </div>
-      <a href="https://your-live-project-link.com/shopping" target="_blank"
-         class="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-yellow-400 text-gray-900 font-semibold rounded-full shadow hover:scale-105 hover:shadow-lg transition-transform duration-300 mx-auto">
-        🔗 View Project
-      </a>
-    </section>
+<section class="mb-16 text-center">
+  <h3 class="text-3xl font-bold text-pink-400 mb-6">Shopping Website</h3>
+  <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-6 max-w-5xl mx-auto">
+    <img src="./S1.png" alt="Shopping project 1" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
+    <img src="./S2.png" alt="Shopping project 2" class="rounded-lg shadow-lg object-cover w-full h-60 fade-in-up hover-scale-shadow" />
+  </div>
+  <a href="https://your-live-project-link.com/shopping" target="_blank" 
+     class="inline-block px-6 py-2 bg-gradient-to-r from-pink-500 to-yellow-400 text-gray-900 font-semibold rounded-full shadow hover:scale-105 hover:shadow-lg transition-transform duration-300 mx-auto">
+    🔗 View Project
+  </a>
+</section>
+
+
+ 
 
   </main>
 
-  <!-- FOOTER -->
-  <footer class="bg-gradient-to-r from-purple-700 via-pink-600 to-yellow-500 mt-16">
-    <div
-      class="max-w-7xl mx-auto px-6 py-8 flex flex-col sm:flex-row items-center justify-between text-white text-center sm:text-left gap-4"
-    >
-      <p class="text-sm">&copy; 2025 Mahnoor Qaiser. All rights reserved.</p>
-      <div class="flex space-x-5">
-        <!-- GitHub -->
-        <a href="https://github.com/mahnoor311" target="_blank" class="hover:scale-110 transition transform">
-          <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="w-6 h-6" />
-        </a>
-        <!-- LinkedIn -->
-        <a href="https://www.linkedin.com/in/mahnoor-qaiser-711903317" target="_blank" class="hover:scale-110 transition transform">
-          <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6" />
-        </a>
-      </div>
-    </div>
-  </footer>
+<footer class="bg-gradient-to-r from-purple-700 via-pink-600 to-yellow-500 mt-16">
+  <div class="max-w-7xl mx-auto px-6 py-8 flex flex-col items-center text-white text-center">
+    <p class="text-sm mb-4">&copy; 2025 Mahnoor Qaiser. All rights reserved.</p>
+    <div class="flex space-x-5">
+      <!-- GitHub -->
+      <a href="https://github.com/mahnoor311" target="_blank" class="hover:scale-110 transition transform">
+        <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" class="w-6 h-6">
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/mahnoor-qaiser-711903317" target="_blank" class="hover:scale-110 transition transform">
+        <img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" class="w-6 h-6">
+      </a>
+
+   
+  </div>
+</footer>
+
 
 </body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
